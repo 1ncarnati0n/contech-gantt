@@ -153,25 +153,12 @@ Next.js 16 기반 웹 애플리케이션
 
 ## 🗺 로드맵
 
-### Phase 1: MVP (진행 중)
+**📍 [전체 개발 로드맵 보기](./docs/ROADMAP.md)**
 
-- [x] Turborepo 모노레포 설정
-- [x] 간트차트 페이지 구현
-- [x] LocalStorage 데이터 저장
-- [ ] 프로젝트 상세 페이지 통합
-- [ ] Supabase 연동
-- [ ] 베이스라인/제약조건 기능
-
-### Phase 2: 확장
-
-- [ ] 실시간 협업
-- [ ] 자원 관리
-- [ ] 모바일 최적화
-
-### Phase 3: 고급 기능
-
-- [ ] P6 XER Import/Export
-- [ ] EVM (Earned Value Management)
+### 현재 상태
+- ✅ Phase 1 MVP 진행 중 (35%)
+- ✅ 모노레포, 간트차트 페이지, UI 컴포넌트 완료
+- ⏳ 다음: Supabase 연동, 베이스라인 기능
 
 ---
 
