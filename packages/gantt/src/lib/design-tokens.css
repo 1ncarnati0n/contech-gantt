@@ -1,0 +1,260 @@
+/* ============================================
+ * @contech/gantt Design Tokens
+ *
+ * 건설 전문 간트차트 라이브러리 디자인 시스템
+ * shadcn/ui 호환 토큰 확장
+ * ============================================ */
+
+:root {
+  /* === Spacing Scale === */
+  --gantt-space-0: 0;
+  --gantt-space-px: 1px;
+  --gantt-space-0\.5: 0.125rem;  /* 2px */
+  --gantt-space-1: 0.25rem;      /* 4px */
+  --gantt-space-1\.5: 0.375rem;  /* 6px */
+  --gantt-space-2: 0.5rem;       /* 8px */
+  --gantt-space-2\.5: 0.625rem;  /* 10px */
+  --gantt-space-3: 0.75rem;      /* 12px */
+  --gantt-space-3\.5: 0.875rem;  /* 14px */
+  --gantt-space-4: 1rem;         /* 16px */
+  --gantt-space-5: 1.25rem;      /* 20px */
+  --gantt-space-6: 1.5rem;       /* 24px */
+  --gantt-space-7: 1.75rem;      /* 28px */
+  --gantt-space-8: 2rem;         /* 32px */
+  --gantt-space-9: 2.25rem;      /* 36px */
+  --gantt-space-10: 2.5rem;      /* 40px */
+  --gantt-space-12: 3rem;        /* 48px */
+  --gantt-space-16: 4rem;        /* 64px */
+
+  /* === Typography Scale === */
+  --gantt-text-xs: 0.75rem;      /* 12px - 셀 내용, 라벨 */
+  --gantt-text-sm: 0.875rem;     /* 14px - 기본 텍스트 */
+  --gantt-text-base: 1rem;       /* 16px - 제목 */
+  --gantt-text-lg: 1.125rem;     /* 18px - 섹션 헤더 */
+  --gantt-text-xl: 1.25rem;      /* 20px - 모달 제목 */
+  --gantt-text-2xl: 1.5rem;      /* 24px - 페이지 제목 */
+
+  /* Line Heights */
+  --gantt-leading-none: 1;
+  --gantt-leading-tight: 1.25;
+  --gantt-leading-snug: 1.375;
+  --gantt-leading-normal: 1.5;
+  --gantt-leading-relaxed: 1.625;
+
+  /* Font Weights */
+  --gantt-font-normal: 400;
+  --gantt-font-medium: 500;
+  --gantt-font-semibold: 600;
+  --gantt-font-bold: 700;
+
+  /* === Border Radius === */
+  --gantt-radius-none: 0;
+  --gantt-radius-sm: 0.25rem;    /* 4px */
+  --gantt-radius-md: 0.375rem;   /* 6px - 버튼, 입력 */
+  --gantt-radius-lg: 0.5rem;     /* 8px - 카드 */
+  --gantt-radius-xl: 0.75rem;    /* 12px - 모달 */
+  --gantt-radius-2xl: 1rem;      /* 16px */
+  --gantt-radius-full: 9999px;   /* 원형 */
+
+  /* === Shadows (Light Mode) === */
+  --gantt-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --gantt-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --gantt-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --gantt-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --gantt-shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --gantt-shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+  /* === Ring (Focus Outline) === */
+  --gantt-ring-width: 2px;
+  --gantt-ring-offset: 2px;
+  --gantt-ring-color: var(--gantt-focus);
+  --gantt-ring-offset-color: var(--gantt-bg-primary);
+
+  /* === Animation Durations === */
+  --gantt-duration-75: 75ms;
+  --gantt-duration-100: 100ms;
+  --gantt-duration-150: 150ms;
+  --gantt-duration-200: 200ms;
+  --gantt-duration-300: 300ms;
+  --gantt-duration-500: 500ms;
+  --gantt-duration-700: 700ms;
+  --gantt-duration-1000: 1000ms;
+
+  /* === Animation Timing Functions === */
+  --gantt-ease-linear: linear;
+  --gantt-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --gantt-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --gantt-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --gantt-ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* === Z-Index Scale === */
+  --gantt-z-dropdown: 50;
+  --gantt-z-sticky: 100;
+  --gantt-z-modal: 1000;
+  --gantt-z-popover: 1050;
+  --gantt-z-tooltip: 1100;
+  --gantt-z-toast: 1200;
+
+  /* === Semantic Colors (Construction-Specific) === */
+  /* Level 1 CP Bar Colors */
+  --gantt-cp-work: #E34234;           /* 작업일 (주홍) */
+  --gantt-cp-nonwork: #008080;        /* 비작업일 (청록) */
+
+  /* Level 2 Task Bar Colors */
+  --gantt-task-net: #DC2626;          /* 순작업일 (빨강) */
+  --gantt-task-indirect: #2563EB;     /* 간접작업일 (파랑) */
+
+  /* Status Colors */
+  --gantt-critical: #B91C1C;          /* Critical Path */
+  --gantt-on-schedule: #10B981;       /* 정상 진행 */
+  --gantt-delayed: #F59E0B;           /* 지연 경고 */
+  --gantt-overdue: #EF4444;           /* 지연 초과 */
+
+  /* Progress Gradient */
+  --gantt-progress-0: #E5E7EB;        /* 0% */
+  --gantt-progress-25: #FCD34D;       /* 25% */
+  --gantt-progress-50: #FBBF24;       /* 50% */
+  --gantt-progress-75: #34D399;       /* 75% */
+  --gantt-progress-100: #10B981;      /* 100% */
+
+  /* === Component-Specific Tokens === */
+  /* Button */
+  --gantt-btn-height-sm: 2rem;        /* 32px */
+  --gantt-btn-height-md: 2.5rem;      /* 40px */
+  --gantt-btn-height-lg: 2.75rem;     /* 44px */
+
+  /* Input */
+  --gantt-input-height: 2.5rem;       /* 40px */
+  --gantt-input-height-sm: 2rem;      /* 32px */
+
+  /* Modal */
+  --gantt-modal-width-sm: 24rem;      /* 384px */
+  --gantt-modal-width-md: 28rem;      /* 448px */
+  --gantt-modal-width-lg: 32rem;      /* 512px */
+  --gantt-modal-width-xl: 36rem;      /* 576px */
+
+  /* Sidebar */
+  --gantt-sidebar-width: 400px;
+  --gantt-sidebar-min-width: 280px;
+  --gantt-sidebar-max-width: 600px;
+
+  /* Row Heights */
+  --gantt-row-height: 36px;
+  --gantt-header-height: 72px;
+}
+
+/* === Dark Mode Shadows === */
+:root.dark,
+.dark {
+  --gantt-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --gantt-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.4), 0 1px 2px -1px rgb(0 0 0 / 0.4);
+  --gantt-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+  --gantt-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
+  --gantt-shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.6), 0 8px 10px -6px rgb(0 0 0 / 0.6);
+  --gantt-shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.7);
+
+  /* Ring offset for dark mode */
+  --gantt-ring-offset-color: var(--gantt-bg-primary);
+
+  /* Semantic Colors (Dark Mode Adjustments) */
+  --gantt-cp-work: #F97066;
+  --gantt-cp-nonwork: #2DD4BF;
+  --gantt-task-net: #F87171;
+  --gantt-task-indirect: #60A5FA;
+  --gantt-critical: #FCA5A5;
+  --gantt-on-schedule: #34D399;
+  --gantt-delayed: #FCD34D;
+  --gantt-overdue: #F87171;
+}
+
+/* === Animation Keyframes === */
+@keyframes gantt-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes gantt-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes gantt-slide-in-from-top {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes gantt-slide-in-from-bottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes gantt-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes gantt-scale-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+@keyframes gantt-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* === Utility Classes for Animations === */
+.gantt-animate-fade-in {
+  animation: gantt-fade-in var(--gantt-duration-200) var(--gantt-ease-out);
+}
+
+.gantt-animate-fade-out {
+  animation: gantt-fade-out var(--gantt-duration-150) var(--gantt-ease-in);
+}
+
+.gantt-animate-scale-in {
+  animation: gantt-scale-in var(--gantt-duration-200) var(--gantt-ease-out);
+}
+
+.gantt-animate-spin {
+  animation: gantt-spin 1s linear infinite;
+}
+
+/* === Focus Ring Utility === */
+.gantt-focus-ring {
+  outline: none;
+}
+
+.gantt-focus-ring:focus-visible {
+  outline: var(--gantt-ring-width) solid var(--gantt-ring-color);
+  outline-offset: var(--gantt-ring-offset);
+}

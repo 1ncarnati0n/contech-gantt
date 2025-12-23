@@ -1,0 +1,243 @@
+@import "tailwindcss";
+@source "../../src";
+@plugin "@tailwindcss/typography";
+
+@variant dark (&:where(.dark, .dark *));
+
+/* D2Coding 폰트 로드 (한글 코딩 폰트) */
+@font-face {
+  font-family: 'D2Coding';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* 
+     IMPORTANT: Map theme colors to CSS variables.
+     This allows dynamic runtime switching (dark mode) without recompiling CSS.
+  */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Primary Colors - Zinc (Neutral, Professional) */
+  --color-primary-50: #fafafa;
+  --color-primary-100: #f4f4f5;
+  --color-primary-200: #e4e4e7;
+  --color-primary-300: #d4d4d8;
+  --color-primary-400: #a1a1aa;
+  --color-primary-500: #71717a;
+  --color-primary-600: #52525b;
+  --color-primary-700: #3f3f46;
+  --color-primary-800: #27272a;
+  --color-primary-900: #18181b;
+  --color-primary-950: #09090b;
+
+  /* Admin Colors - Orange */
+  --color-admin-50: #fff7ed;
+  --color-admin-100: #ffedd5;
+  --color-admin-200: #fed7aa;
+  --color-admin-300: #fdba74;
+  --color-admin-400: #fb923c;
+  --color-admin-500: #f97316;
+  --color-admin-600: #ea580c;
+  --color-admin-700: #c2410c;
+  --color-admin-800: #9a3412;
+  --color-admin-900: #7c2d12;
+
+  /* Accent Colors - Vivid Blue */
+  --color-accent-50: #eff6ff;
+  --color-accent-100: #dbeafe;
+  --color-accent-200: #bfdbfe;
+  --color-accent-300: #93c5fd;
+  --color-accent-400: #60a5fa;
+  --color-accent-500: #3b82f6;
+  --color-accent-600: #2563eb;
+  --color-accent-700: #1d4ed8;
+  --color-accent-800: #1e40af;
+  --color-accent-900: #1e3a8a;
+
+  /* Success - Emerald */
+  --color-success-50: #ecfdf5;
+  --color-success-500: #10b981;
+  --color-success-600: #059669;
+  --color-success-700: #047857;
+
+  /* Error - Red */
+  --color-error-50: #fef2f2;
+  --color-error-500: #ef4444;
+  --color-error-600: #dc2626;
+  --color-error-700: #b91c1c;
+
+  /* Warning - Amber */
+  --color-warning-50: #fffbeb;
+  --color-warning-500: #f59e0b;
+  --color-warning-600: #d97706;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-DEFAULT: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* Border Radius - Modern rounded (8-12px) */
+  --radius-sm: 0.5rem;        /* 8px */
+  --radius-DEFAULT: 0.625rem; /* 10px */
+  --radius-md: 0.75rem;       /* 12px */
+  --radius-lg: 0.875rem;      /* 14px */
+  --radius-xl: 1rem;          /* 16px */
+
+  /* Animations */
+  --animate-fade-in: fadeIn 0.3s ease-out;
+  --animate-slide-up: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-spin: spin 1s linear infinite;
+  
+  /* Font Family */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: "SF Mono", "D2Coding", ui-monospace, SFMono-Regular, "Roboto Mono", Menlo, Monaco, Consolas, monospace;
+}
+
+/* 
+  Root Variables & Dark Mode 
+*/
+:root {
+  --background: #ffffff;
+  --foreground: #09090b; /* Zinc-950 */
+  --grid-color: #71717a; /* Zinc-500 for light mode */
+}
+
+/* Grid Background Pattern */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url('/grid.svg');
+  background-size: 40px 40px;
+  background-repeat: repeat;
+  pointer-events: none;
+  opacity: 1;
+  mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, #000 70%, transparent 110%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, #000 70%, transparent 110%);
+}
+
+/* Dark mode - Zinc-900 for softer, premium dark theme */
+.dark {
+  --background: #18181b; /* Zinc-900 */
+  --foreground: #fafafa; /* Zinc-50 */
+
+  /* Adjust shadows for dark mode - enhanced opacity for better depth */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.4);
+  --shadow-DEFAULT: 0 1px 3px 0 rgb(0 0 0 / 0.4), 0 1px 2px -1px rgb(0 0 0 / 0.4);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+}
+
+/* Base Styles */
+@layer base {
+  html, body {
+    @apply m-0 p-0 bg-background text-foreground;
+  }
+
+  body {
+    @apply antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    @apply bg-accent-200 text-accent-900;
+  }
+}
+
+/* Component Styles */
+@layer components {
+  /* Card Component */
+  .card {
+    @apply bg-white dark:bg-zinc-900 rounded-md border border-zinc-200 dark:border-zinc-800 transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-sm;
+  }
+
+  /* Glassmorphism */
+  .glass {
+    @apply bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded font-medium transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed text-sm;
+    @apply border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100;
+    @apply hover:bg-zinc-50 dark:hover:bg-zinc-800;
+    @apply active:scale-[0.98];
+  }
+
+  .btn-primary {
+    @apply bg-zinc-900 text-white border-transparent hover:bg-black dark:bg-white dark:text-black dark:hover:bg-zinc-200 shadow-sm;
+  }
+
+  .btn-accent {
+    @apply bg-accent-600 text-white border-transparent hover:bg-accent-700 dark:bg-accent-600 dark:hover:bg-accent-500 shadow-sm;
+  }
+  
+  .btn-admin {
+    @apply bg-admin-500 text-white border-transparent hover:bg-admin-600 dark:bg-admin-600 dark:hover:bg-admin-500 shadow-sm;
+  }
+
+  /* Loading Spinner */
+  .spinner {
+    @apply w-5 h-5 rounded-full border-2 border-zinc-200 border-t-accent-600 animate-spin;
+  }
+
+  /* Prose Pre 스타일 리셋 - Typography 플러그인 기본 스타일 제거 */
+  .prose pre {
+    @apply bg-transparent p-0 m-0;
+  }
+
+  /* 코드 블록 line-height - not-prose 영역 포함 */
+  .markdown-content pre code {
+    @apply leading-none;
+  }
+}
+
+/* Keyframes */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.slide-up {
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}

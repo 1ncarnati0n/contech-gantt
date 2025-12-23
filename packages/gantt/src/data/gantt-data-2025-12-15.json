@@ -1,0 +1,4325 @@
+{
+    "milestones": [
+        {
+            "id": "m1",
+            "date": "2026-01-22",
+            "name": "착공",
+            "type": "MILESTONE"
+        },
+        {
+            "id": "m2",
+            "date": "2026-03-20",
+            "name": "터파기 완료",
+            "type": "MILESTONE"
+        },
+        {
+            "id": "m3",
+            "date": "2026-05-11",
+            "name": "기초 완료",
+            "type": "MILESTONE"
+        },
+        {
+            "id": "m4",
+            "date": "2026-08-02",
+            "name": "101동 지하골조 완",
+            "type": "MILESTONE",
+            "milestoneType": "DETAIL"
+        },
+        {
+            "id": "m5",
+            "date": "2026-11-22",
+            "name": "지상골조 완료",
+            "type": "MILESTONE"
+        },
+        {
+            "id": "m6",
+            "date": "2027-03-27",
+            "name": "준공",
+            "type": "MILESTONE"
+        },
+        {
+            "id": "milestone-1764919162489",
+            "date": "2026-09-08",
+            "name": "지하골조 완료",
+            "type": "MILESTONE",
+            "milestoneType": "MASTER"
+        },
+        {
+            "id": "dm2",
+            "date": "2026-04-06",
+            "name": "101동 기초 완료",
+            "type": "MILESTONE",
+            "milestoneType": "DETAIL"
+        },
+        {
+            "id": "milestone-1765256752692",
+            "date": "2026-04-24",
+            "name": "102동 기초 완",
+            "type": "MILESTONE",
+            "milestoneType": "DETAIL"
+        },
+        {
+            "id": "milestone-1765412891978",
+            "date": "2026-08-22",
+            "name": "102동 지하골조 완",
+            "type": "MILESTONE",
+            "milestoneType": "DETAIL"
+        },
+        {
+            "id": "milestone-1765412923698",
+            "date": "2026-11-08",
+            "name": "102동 지상골조 완",
+            "type": "MILESTONE",
+            "milestoneType": "DETAIL"
+        }
+    ],
+    "tasks": [
+        {
+            "id": "group-1764833990050",
+            "parentId": null,
+            "wbsLevel": 1,
+            "type": "GROUP",
+            "name": "공동주택 101동",
+            "startDate": "2025-12-04",
+            "endDate": "2025-12-10",
+            "dependencies": []
+        },
+        {
+            "id": "cp-1764833935000",
+            "parentId": "group-1764833990050",
+            "wbsLevel": 1,
+            "type": "CP",
+            "name": "버림 및 직접기초",
+            "startDate": "2026-03-20",
+            "endDate": "2026-04-05",
+            "cp": {
+                "workDaysTotal": 12,
+                "nonWorkDaysTotal": 5
+            },
+            "dependencies": []
+        },
+        {
+            "id": "cp-1764915417976",
+            "parentId": "group-1764833990050",
+            "wbsLevel": 1,
+            "type": "CP",
+            "name": "지하골조: B2F, B1F 2단",
+            "startDate": "2026-04-06",
+            "endDate": "2026-08-01",
+            "cp": {
+                "workDaysTotal": 93,
+                "nonWorkDaysTotal": 14
+            },
+            "dependencies": []
+        },
+        {
+            "id": "cp-1764917497690",
+            "parentId": "group-1764833990050",
+            "wbsLevel": 1,
+            "type": "CP",
+            "name": "지상골조: F1, F2~7, F8, PH",
+            "startDate": "2026-08-03",
+            "endDate": "2026-10-17",
+            "cp": {
+                "workDaysTotal": 64,
+                "nonWorkDaysTotal": 51.5
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765244383965",
+            "parentId": "cp-1764833935000",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기초버림",
+            "startDate": "2026-03-20",
+            "endDate": "2026-03-22",
+            "dependencies": []
+        },
+        {
+            "id": "task-1764833942933",
+            "parentId": "group-1765244383965",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "버림틀설치",
+            "startDate": "2026-03-20",
+            "endDate": "2026-03-20",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764833950015",
+            "parentId": "group-1765244383965",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "버림타설",
+            "startDate": "2026-03-21",
+            "endDate": "2026-03-22",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 1,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765173796490",
+            "parentId": "cp-1764833935000",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "직접기초",
+            "startDate": "2026-03-09",
+            "endDate": "2026-03-26",
+            "dependencies": []
+        },
+        {
+            "id": "task-1764833957364",
+            "parentId": "group-1765173796490",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹메김",
+            "startDate": "2026-03-23",
+            "endDate": "2026-03-23",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764833962962",
+            "parentId": "group-1765173796490",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "기초철근조립",
+            "startDate": "2026-03-24",
+            "endDate": "2026-03-31",
+            "task": {
+                "netWorkDays": 6,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764833969352",
+            "parentId": "group-1765173796490",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "끊어치기 작업",
+            "startDate": "2026-03-31",
+            "endDate": "2026-04-02",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764833974727",
+            "parentId": "group-1765173796490",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "기초타설",
+            "startDate": "2026-04-02",
+            "endDate": "2026-04-05",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 3,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1764916012423",
+            "parentId": "cp-1764915417976",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "지하2층",
+            "startDate": "2026-04-06",
+            "endDate": "2026-05-09",
+            "dependencies": []
+        },
+        {
+            "id": "task-1764915451096",
+            "parentId": "group-1764916012423",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-04-06",
+            "endDate": "2026-04-06",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764915572757",
+            "parentId": "group-1764916012423",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽철근조립",
+            "startDate": "2026-04-07",
+            "endDate": "2026-04-12",
+            "task": {
+                "netWorkDays": 5,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764915648200",
+            "parentId": "group-1764916012423",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "지하2층 거푸집설치",
+            "startDate": "2026-04-13",
+            "endDate": "2026-05-02",
+            "task": {
+                "netWorkDays": 17,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 1,
+                "indirectWorkNamePost": "보강 / 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764915903807",
+            "parentId": "group-1764916012423",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "보,슬라브 철근조립",
+            "startDate": "2026-05-04",
+            "endDate": "2026-05-10",
+            "task": {
+                "netWorkDays": 5,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764915992145",
+            "parentId": "group-1764916012423",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "마감작업",
+            "startDate": "2026-05-09",
+            "endDate": "2026-05-12",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764916119980",
+            "parentId": "group-1764916012423",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-05-12",
+            "endDate": "2026-05-15",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 3,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764916170743",
+            "parentId": "group-1764916012423",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "거푸집 해체정리",
+            "startDate": "2026-05-16",
+            "endDate": "2026-06-04",
+            "task": {
+                "netWorkDays": 16,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1764917434449",
+            "parentId": "cp-1764915417976",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "지하1층 2단",
+            "startDate": "2026-05-28",
+            "endDate": "2026-08-07",
+            "dependencies": []
+        },
+        {
+            "id": "task-1764916082203",
+            "parentId": "group-1764917434449",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-06-04",
+            "endDate": "2026-06-04",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765175749907",
+            "parentId": "group-1764917434449",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "벽 철근조립",
+            "startDate": "2026-06-05",
+            "endDate": "2026-06-12",
+            "task": {
+                "netWorkDays": 5,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764916098741",
+            "parentId": "group-1764917434449",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "지하1층 거푸집 설치",
+            "startDate": "2026-06-11",
+            "endDate": "2026-07-01",
+            "task": {
+                "netWorkDays": 17,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764917122853",
+            "parentId": "group-1764917434449",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "보,슬라브 철근조립",
+            "startDate": "2026-07-01",
+            "endDate": "2026-07-07",
+            "task": {
+                "netWorkDays": 5,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764917189561",
+            "parentId": "group-1764917434449",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "1차 마감작업",
+            "startDate": "2026-07-07",
+            "endDate": "2026-07-09",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764917256784",
+            "parentId": "group-1764917434449",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "1차 타설",
+            "startDate": "2026-07-09",
+            "endDate": "2026-07-12",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 3,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764917346141",
+            "parentId": "group-1764917434449",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "2차 마감작업",
+            "startDate": "2026-07-13",
+            "endDate": "2026-07-15",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764917379035",
+            "parentId": "group-1764917434449",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "2차 타설",
+            "startDate": "2026-07-15",
+            "endDate": "2026-07-18",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 3,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764917417904",
+            "parentId": "group-1764917434449",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "거푸집 해체정리",
+            "startDate": "2026-07-20",
+            "endDate": "2026-08-01",
+            "task": {
+                "netWorkDays": 12,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1764922747430",
+            "parentId": "cp-1764917497690",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "세팅층 F1",
+            "startDate": "2026-08-06",
+            "endDate": "2026-08-27",
+            "dependencies": []
+        },
+        {
+            "id": "task-1764917719562",
+            "parentId": "group-1764922747430",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-08-03",
+            "endDate": "2026-08-03",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764917915587",
+            "parentId": "group-1764922747430",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-08-04",
+            "endDate": "2026-08-11",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 6,
+                "indirectWorkNamePost": "앵커 / 안전발판"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764917970308",
+            "parentId": "group-1764922747430",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-08-06",
+            "endDate": "2026-08-08",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764918001817",
+            "parentId": "group-1764922747430",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-08-08",
+            "endDate": "2026-08-13",
+            "task": {
+                "netWorkDays": 4,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764918956774",
+            "parentId": "group-1764922747430",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 알폼조립",
+            "startDate": "2026-08-13",
+            "endDate": "2026-08-15",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764919071225",
+            "parentId": "group-1764922747430",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-08-18",
+            "endDate": "2026-08-20",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1764922770795",
+            "parentId": "cp-1764917497690",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F2",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1764922764832",
+            "parentId": "group-1764922770795",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-08-18",
+            "endDate": "2026-08-18",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764922809284",
+            "parentId": "group-1764922770795",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-08-18",
+            "endDate": "2026-08-20",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764922851457",
+            "parentId": "group-1764922770795",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-08-19",
+            "endDate": "2026-08-20",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764922904568",
+            "parentId": "group-1764922770795",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-08-20",
+            "endDate": "2026-08-21",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764922939554",
+            "parentId": "group-1764922770795",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-08-21",
+            "endDate": "2026-08-22",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1764923004395",
+            "parentId": "group-1764922770795",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-08-22",
+            "endDate": "2026-08-24",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765165914389",
+            "parentId": "cp-1764917497690",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F3",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765165914390",
+            "parentId": "group-1765165914389",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-08-24",
+            "endDate": "2026-08-24",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765165914391",
+            "parentId": "group-1765165914389",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-08-25",
+            "endDate": "2026-08-27",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765165914392",
+            "parentId": "group-1765165914389",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-08-26",
+            "endDate": "2026-08-27",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765165914393",
+            "parentId": "group-1765165914389",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-08-27",
+            "endDate": "2026-08-28",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765165914394",
+            "parentId": "group-1765165914389",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-29",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765165914395",
+            "parentId": "group-1765165914389",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-08-29",
+            "endDate": "2026-08-31",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765166235818",
+            "parentId": "cp-1764917497690",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F4",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166235819",
+            "parentId": "group-1765166235818",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-08-31",
+            "endDate": "2026-08-31",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166235820",
+            "parentId": "group-1765166235818",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-09-01",
+            "endDate": "2026-09-03",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166235821",
+            "parentId": "group-1765166235818",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-09-02",
+            "endDate": "2026-09-03",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166235822",
+            "parentId": "group-1765166235818",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-09-03",
+            "endDate": "2026-09-04",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166235823",
+            "parentId": "group-1765166235818",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-09-04",
+            "endDate": "2026-09-05",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166235824",
+            "parentId": "group-1765166235818",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-09-05",
+            "endDate": "2026-09-07",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765166361046",
+            "parentId": "cp-1764917497690",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F5",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166361047",
+            "parentId": "group-1765166361046",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-09-07",
+            "endDate": "2026-09-07",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166361048",
+            "parentId": "group-1765166361046",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-09-08",
+            "endDate": "2026-09-10",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166361049",
+            "parentId": "group-1765166361046",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-09-09",
+            "endDate": "2026-09-10",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166361050",
+            "parentId": "group-1765166361046",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-09-10",
+            "endDate": "2026-09-11",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166361051",
+            "parentId": "group-1765166361046",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-09-11",
+            "endDate": "2026-09-12",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166361052",
+            "parentId": "group-1765166361046",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-09-12",
+            "endDate": "2026-09-14",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765166503037",
+            "parentId": "cp-1764917497690",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F6",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166503038",
+            "parentId": "group-1765166503037",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-09-14",
+            "endDate": "2026-09-14",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166503039",
+            "parentId": "group-1765166503037",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-09-15",
+            "endDate": "2026-09-17",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166503040",
+            "parentId": "group-1765166503037",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-09-16",
+            "endDate": "2026-09-17",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166503041",
+            "parentId": "group-1765166503037",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-09-17",
+            "endDate": "2026-09-18",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166503042",
+            "parentId": "group-1765166503037",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-09-18",
+            "endDate": "2026-09-19",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166503043",
+            "parentId": "group-1765166503037",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-09-19",
+            "endDate": "2026-09-21",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765166506072",
+            "parentId": "cp-1764917497690",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F7",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166506073",
+            "parentId": "group-1765166506072",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-09-21",
+            "endDate": "2026-09-21",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166506074",
+            "parentId": "group-1765166506072",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-09-22",
+            "endDate": "2026-09-24",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166506075",
+            "parentId": "group-1765166506072",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-09-23",
+            "endDate": "2026-09-24",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166506076",
+            "parentId": "group-1765166506072",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-09-28",
+            "endDate": "2026-09-29",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166506077",
+            "parentId": "group-1765166506072",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-09-28",
+            "endDate": "2026-09-29",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166506078",
+            "parentId": "group-1765166506072",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-09-28",
+            "endDate": "2026-09-30",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765166806407",
+            "parentId": "cp-1764917497690",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "마감층 F8",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166806408",
+            "parentId": "group-1765166806407",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-09-28",
+            "endDate": "2026-09-28",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166806409",
+            "parentId": "group-1765166806407",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-09-29",
+            "endDate": "2026-10-01",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166806410",
+            "parentId": "group-1765166806407",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-01",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166806411",
+            "parentId": "group-1765166806407",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-10-01",
+            "endDate": "2026-10-02",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166806412",
+            "parentId": "group-1765166806407",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-10-02",
+            "endDate": "2026-10-03",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765166806413",
+            "parentId": "group-1765166806407",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-10-06",
+            "endDate": "2026-10-08",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765176212058",
+            "parentId": "cp-1764917497690",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "PH층",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765176212059",
+            "parentId": "group-1765176212058",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-10-06",
+            "endDate": "2026-10-06",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765176212061",
+            "parentId": "group-1765176212058",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-10-06",
+            "endDate": "2026-10-07",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765176212062",
+            "parentId": "group-1765176212058",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "유로폼조립",
+            "startDate": "2026-10-07",
+            "endDate": "2026-10-15",
+            "task": {
+                "netWorkDays": 6,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765176212063",
+            "parentId": "group-1765176212058",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-10-14",
+            "endDate": "2026-10-15",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765176212064",
+            "parentId": "group-1765176212058",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-10-15",
+            "endDate": "2026-10-17",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765245092715",
+            "parentId": null,
+            "wbsLevel": 1,
+            "type": "GROUP",
+            "name": "공동주택 102동",
+            "startDate": "2025-12-04",
+            "endDate": "2025-12-10",
+            "dependencies": []
+        },
+        {
+            "id": "cp-1765245092716",
+            "parentId": "group-1765245092715",
+            "wbsLevel": 1,
+            "type": "CP",
+            "name": "버림 및 직접기초",
+            "startDate": "2026-04-06",
+            "endDate": "2026-04-23",
+            "cp": {
+                "workDaysTotal": 12,
+                "nonWorkDaysTotal": 5
+            },
+            "dependencies": []
+        },
+        {
+            "id": "cp-1765412220854",
+            "parentId": "group-1765245092715",
+            "wbsLevel": 1,
+            "type": "CP",
+            "name": "지하골조: B2F, B1F 2단",
+            "startDate": "2026-04-24",
+            "endDate": "2026-08-24",
+            "cp": {
+                "workDaysTotal": 93,
+                "nonWorkDaysTotal": 14
+            },
+            "dependencies": []
+        },
+        {
+            "id": "cp-1765412549292",
+            "parentId": "group-1765245092715",
+            "wbsLevel": 1,
+            "type": "CP",
+            "name": "지상골조: F1, F2~7, F8, PH",
+            "startDate": "2026-08-22",
+            "endDate": "2026-11-07",
+            "cp": {
+                "workDaysTotal": 64,
+                "nonWorkDaysTotal": 51.5
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765245092717",
+            "parentId": "cp-1765245092716",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기초버림",
+            "startDate": "2026-03-20",
+            "endDate": "2026-03-22",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765245092718",
+            "parentId": "group-1765245092717",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "버림틀설치",
+            "startDate": "2026-04-06",
+            "endDate": "2026-04-06",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765245092719",
+            "parentId": "group-1765245092717",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "버림타설",
+            "startDate": "2026-04-07",
+            "endDate": "2026-04-08",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 1,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765245092720",
+            "parentId": "cp-1765245092716",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "직접기초",
+            "startDate": "2026-03-09",
+            "endDate": "2026-03-26",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765245092721",
+            "parentId": "group-1765245092720",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹메김",
+            "startDate": "2026-04-09",
+            "endDate": "2026-04-09",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765245092722",
+            "parentId": "group-1765245092720",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "기초철근조립",
+            "startDate": "2026-04-10",
+            "endDate": "2026-04-17",
+            "task": {
+                "netWorkDays": 6,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765245092723",
+            "parentId": "group-1765245092720",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "끊어치기 작업",
+            "startDate": "2026-04-17",
+            "endDate": "2026-04-19",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765245092724",
+            "parentId": "group-1765245092720",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "기초타설",
+            "startDate": "2026-04-20",
+            "endDate": "2026-04-23",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 3,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765258943823",
+            "parentId": null,
+            "wbsLevel": 1,
+            "type": "GROUP",
+            "name": "공동주택 103동",
+            "startDate": "2025-12-04",
+            "endDate": "2025-12-10",
+            "dependencies": []
+        },
+        {
+            "id": "cp-1765258943824",
+            "parentId": "group-1765258943823",
+            "wbsLevel": 1,
+            "type": "CP",
+            "name": "버림 및 직접기초",
+            "startDate": "2026-04-24",
+            "endDate": "2026-05-10",
+            "cp": {
+                "workDaysTotal": 12,
+                "nonWorkDaysTotal": 5
+            },
+            "dependencies": []
+        },
+        {
+            "id": "cp-1765412650288",
+            "parentId": "group-1765258943823",
+            "wbsLevel": 1,
+            "type": "CP",
+            "name": "지하골조: B2F, B1F 2단 1",
+            "startDate": "2026-05-11",
+            "endDate": "2026-09-07",
+            "cp": {
+                "workDaysTotal": 93,
+                "nonWorkDaysTotal": 14
+            },
+            "dependencies": []
+        },
+        {
+            "id": "cp-1765412729357",
+            "parentId": "group-1765258943823",
+            "wbsLevel": 1,
+            "type": "CP",
+            "name": "지상골조: F1, F2~7, F8, PH",
+            "startDate": "2026-09-08",
+            "endDate": "2026-11-21",
+            "cp": {
+                "workDaysTotal": 64,
+                "nonWorkDaysTotal": 51.5
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765258943825",
+            "parentId": "cp-1765258943824",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기초버림",
+            "startDate": "2026-03-20",
+            "endDate": "2026-03-22",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765258943826",
+            "parentId": "group-1765258943825",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "버림틀설치",
+            "startDate": "2026-04-24",
+            "endDate": "2026-04-24",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765258943827",
+            "parentId": "group-1765258943825",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "버림타설",
+            "startDate": "2026-04-25",
+            "endDate": "2026-04-26",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 1,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765258943828",
+            "parentId": "cp-1765258943824",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "직접기초",
+            "startDate": "2026-03-09",
+            "endDate": "2026-03-26",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765258943829",
+            "parentId": "group-1765258943828",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹메김",
+            "startDate": "2026-04-27",
+            "endDate": "2026-04-27",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765258943830",
+            "parentId": "group-1765258943828",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "기초철근조립",
+            "startDate": "2026-04-28",
+            "endDate": "2026-05-05",
+            "task": {
+                "netWorkDays": 6,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765258943831",
+            "parentId": "group-1765258943828",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "끊어치기 작업",
+            "startDate": "2026-05-06",
+            "endDate": "2026-05-08",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765258943832",
+            "parentId": "group-1765258943828",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "기초타설",
+            "startDate": "2026-05-07",
+            "endDate": "2026-05-10",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 3,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412220855",
+            "parentId": "cp-1765412220854",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "지하2층",
+            "startDate": "2026-04-06",
+            "endDate": "2026-05-09",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412220856",
+            "parentId": "group-1765412220855",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-04-24",
+            "endDate": "2026-04-24",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412220857",
+            "parentId": "group-1765412220855",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽철근조립",
+            "startDate": "2026-04-25",
+            "endDate": "2026-05-01",
+            "task": {
+                "netWorkDays": 5,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412220858",
+            "parentId": "group-1765412220855",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "지하2층 거푸집설치",
+            "startDate": "2026-05-01",
+            "endDate": "2026-05-22",
+            "task": {
+                "netWorkDays": 17,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 1,
+                "indirectWorkNamePost": "보강 / 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412220859",
+            "parentId": "group-1765412220855",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "보,슬라브 철근조립",
+            "startDate": "2026-05-22",
+            "endDate": "2026-05-29",
+            "task": {
+                "netWorkDays": 5,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412220860",
+            "parentId": "group-1765412220855",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "마감작업",
+            "startDate": "2026-05-28",
+            "endDate": "2026-05-30",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412220861",
+            "parentId": "group-1765412220855",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-05-30",
+            "endDate": "2026-06-02",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 3,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412220862",
+            "parentId": "group-1765412220855",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "거푸집 해체정리",
+            "startDate": "2026-06-03",
+            "endDate": "2026-06-22",
+            "task": {
+                "netWorkDays": 16,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412220863",
+            "parentId": "cp-1765412220854",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "지하1층 2단",
+            "startDate": "2026-05-28",
+            "endDate": "2026-08-07",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412220864",
+            "parentId": "group-1765412220863",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-06-22",
+            "endDate": "2026-06-22",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412220865",
+            "parentId": "group-1765412220863",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "벽 철근조립",
+            "startDate": "2026-06-24",
+            "endDate": "2026-06-30",
+            "task": {
+                "netWorkDays": 5,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412220866",
+            "parentId": "group-1765412220863",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "지하1층 거푸집 설치",
+            "startDate": "2026-06-29",
+            "endDate": "2026-07-18",
+            "task": {
+                "netWorkDays": 17,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412220867",
+            "parentId": "group-1765412220863",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "보,슬라브 철근조립",
+            "startDate": "2026-07-20",
+            "endDate": "2026-07-25",
+            "task": {
+                "netWorkDays": 5,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412220868",
+            "parentId": "group-1765412220863",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "1차 마감작업",
+            "startDate": "2026-07-25",
+            "endDate": "2026-07-28",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412220869",
+            "parentId": "group-1765412220863",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "1차 타설",
+            "startDate": "2026-07-28",
+            "endDate": "2026-07-31",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 3,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412220870",
+            "parentId": "group-1765412220863",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "2차 마감작업",
+            "startDate": "2026-08-01",
+            "endDate": "2026-08-04",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412220871",
+            "parentId": "group-1765412220863",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "2차 타설",
+            "startDate": "2026-08-04",
+            "endDate": "2026-08-07",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 3,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412220872",
+            "parentId": "group-1765412220863",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "거푸집 해체정리",
+            "startDate": "2026-08-08",
+            "endDate": "2026-08-24",
+            "task": {
+                "netWorkDays": 12,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412549293",
+            "parentId": "cp-1765412549292",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "세팅층 F1",
+            "startDate": "2026-08-06",
+            "endDate": "2026-08-27",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549294",
+            "parentId": "group-1765412549293",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-08-22",
+            "endDate": "2026-08-22",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549295",
+            "parentId": "group-1765412549293",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-08-24",
+            "endDate": "2026-08-31",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 6,
+                "indirectWorkNamePost": "앵커 / 안전발판"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549296",
+            "parentId": "group-1765412549293",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-08-26",
+            "endDate": "2026-08-28",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549297",
+            "parentId": "group-1765412549293",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-08-28",
+            "endDate": "2026-09-02",
+            "task": {
+                "netWorkDays": 4,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549298",
+            "parentId": "group-1765412549293",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 알폼조립",
+            "startDate": "2026-09-02",
+            "endDate": "2026-09-04",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549299",
+            "parentId": "group-1765412549293",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-09-04",
+            "endDate": "2026-09-06",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412549300",
+            "parentId": "cp-1765412549292",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F2",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549301",
+            "parentId": "group-1765412549300",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-09-07",
+            "endDate": "2026-09-07",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549302",
+            "parentId": "group-1765412549300",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-09-08",
+            "endDate": "2026-09-10",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549303",
+            "parentId": "group-1765412549300",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-09-09",
+            "endDate": "2026-09-10",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549304",
+            "parentId": "group-1765412549300",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-09-10",
+            "endDate": "2026-09-11",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549305",
+            "parentId": "group-1765412549300",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-09-11",
+            "endDate": "2026-09-12",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549306",
+            "parentId": "group-1765412549300",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-09-12",
+            "endDate": "2026-09-14",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412549307",
+            "parentId": "cp-1765412549292",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F3",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549308",
+            "parentId": "group-1765412549307",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-09-14",
+            "endDate": "2026-09-14",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549309",
+            "parentId": "group-1765412549307",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-09-15",
+            "endDate": "2026-09-17",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549310",
+            "parentId": "group-1765412549307",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-09-16",
+            "endDate": "2026-09-17",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549311",
+            "parentId": "group-1765412549307",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-09-17",
+            "endDate": "2026-09-18",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549312",
+            "parentId": "group-1765412549307",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-09-18",
+            "endDate": "2026-09-19",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549313",
+            "parentId": "group-1765412549307",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-09-19",
+            "endDate": "2026-09-21",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412549314",
+            "parentId": "cp-1765412549292",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F4",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549315",
+            "parentId": "group-1765412549314",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-09-21",
+            "endDate": "2026-09-21",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549316",
+            "parentId": "group-1765412549314",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-09-22",
+            "endDate": "2026-09-24",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549317",
+            "parentId": "group-1765412549314",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-09-23",
+            "endDate": "2026-09-24",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549318",
+            "parentId": "group-1765412549314",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-09-28",
+            "endDate": "2026-09-29",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549319",
+            "parentId": "group-1765412549314",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-09-28",
+            "endDate": "2026-09-29",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549320",
+            "parentId": "group-1765412549314",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-09-28",
+            "endDate": "2026-09-30",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412549321",
+            "parentId": "cp-1765412549292",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F5",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549322",
+            "parentId": "group-1765412549321",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-09-28",
+            "endDate": "2026-09-28",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549323",
+            "parentId": "group-1765412549321",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-09-29",
+            "endDate": "2026-10-01",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549324",
+            "parentId": "group-1765412549321",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-01",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549325",
+            "parentId": "group-1765412549321",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-10-01",
+            "endDate": "2026-10-02",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549326",
+            "parentId": "group-1765412549321",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-10-02",
+            "endDate": "2026-10-03",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549327",
+            "parentId": "group-1765412549321",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-10-06",
+            "endDate": "2026-10-08",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412549328",
+            "parentId": "cp-1765412549292",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F6",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549329",
+            "parentId": "group-1765412549328",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-10-06",
+            "endDate": "2026-10-06",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549330",
+            "parentId": "group-1765412549328",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-10-06",
+            "endDate": "2026-10-08",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549331",
+            "parentId": "group-1765412549328",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-10-07",
+            "endDate": "2026-10-08",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549332",
+            "parentId": "group-1765412549328",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-10-08",
+            "endDate": "2026-10-09",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549333",
+            "parentId": "group-1765412549328",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-10-10",
+            "endDate": "2026-10-11",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549334",
+            "parentId": "group-1765412549328",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-10-10",
+            "endDate": "2026-10-12",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412549335",
+            "parentId": "cp-1765412549292",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F7",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549336",
+            "parentId": "group-1765412549335",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-10-12",
+            "endDate": "2026-10-12",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549337",
+            "parentId": "group-1765412549335",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-10-13",
+            "endDate": "2026-10-15",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549338",
+            "parentId": "group-1765412549335",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-10-14",
+            "endDate": "2026-10-15",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549339",
+            "parentId": "group-1765412549335",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-10-15",
+            "endDate": "2026-10-16",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549340",
+            "parentId": "group-1765412549335",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-10-16",
+            "endDate": "2026-10-17",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549341",
+            "parentId": "group-1765412549335",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-10-17",
+            "endDate": "2026-10-19",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412549342",
+            "parentId": "cp-1765412549292",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "마감층 F8",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549343",
+            "parentId": "group-1765412549342",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-10-19",
+            "endDate": "2026-10-19",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549344",
+            "parentId": "group-1765412549342",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-10-20",
+            "endDate": "2026-10-22",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549345",
+            "parentId": "group-1765412549342",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-10-21",
+            "endDate": "2026-10-22",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549346",
+            "parentId": "group-1765412549342",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-10-22",
+            "endDate": "2026-10-23",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549347",
+            "parentId": "group-1765412549342",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-10-23",
+            "endDate": "2026-10-24",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549348",
+            "parentId": "group-1765412549342",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-10-24",
+            "endDate": "2026-10-26",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412549349",
+            "parentId": "cp-1765412549292",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "PH층",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549350",
+            "parentId": "group-1765412549349",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-10-26",
+            "endDate": "2026-10-26",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549351",
+            "parentId": "group-1765412549349",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-10-27",
+            "endDate": "2026-10-28",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549352",
+            "parentId": "group-1765412549349",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "유로폼조립",
+            "startDate": "2026-10-28",
+            "endDate": "2026-11-04",
+            "task": {
+                "netWorkDays": 6,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549353",
+            "parentId": "group-1765412549349",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-11-04",
+            "endDate": "2026-11-05",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412549354",
+            "parentId": "group-1765412549349",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-11-05",
+            "endDate": "2026-11-07",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412650289",
+            "parentId": "cp-1765412650288",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "지하2층",
+            "startDate": "2026-04-06",
+            "endDate": "2026-05-09",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412650290",
+            "parentId": "group-1765412650289",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-05-11",
+            "endDate": "2026-05-11",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412650291",
+            "parentId": "group-1765412650289",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽철근조립",
+            "startDate": "2026-05-12",
+            "endDate": "2026-05-17",
+            "task": {
+                "netWorkDays": 5,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412650292",
+            "parentId": "group-1765412650289",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "지하2층 거푸집설치",
+            "startDate": "2026-05-18",
+            "endDate": "2026-06-09",
+            "task": {
+                "netWorkDays": 17,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 1,
+                "indirectWorkNamePost": "보강 / 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412650293",
+            "parentId": "group-1765412650289",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "보,슬라브 철근조립",
+            "startDate": "2026-06-08",
+            "endDate": "2026-06-13",
+            "task": {
+                "netWorkDays": 5,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412650294",
+            "parentId": "group-1765412650289",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "마감작업",
+            "startDate": "2026-06-15",
+            "endDate": "2026-06-17",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412650295",
+            "parentId": "group-1765412650289",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-06-16",
+            "endDate": "2026-06-19",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 3,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412650296",
+            "parentId": "group-1765412650289",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "거푸집 해체정리",
+            "startDate": "2026-06-20",
+            "endDate": "2026-07-08",
+            "task": {
+                "netWorkDays": 16,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412650297",
+            "parentId": "cp-1765412650288",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "지하1층 2단",
+            "startDate": "2026-05-28",
+            "endDate": "2026-08-07",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412650298",
+            "parentId": "group-1765412650297",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-07-09",
+            "endDate": "2026-07-09",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412650299",
+            "parentId": "group-1765412650297",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "벽 철근조립",
+            "startDate": "2026-07-11",
+            "endDate": "2026-07-17",
+            "task": {
+                "netWorkDays": 5,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412650300",
+            "parentId": "group-1765412650297",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "지하1층 거푸집 설치",
+            "startDate": "2026-07-16",
+            "endDate": "2026-08-05",
+            "task": {
+                "netWorkDays": 17,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412650301",
+            "parentId": "group-1765412650297",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "보,슬라브 철근조립",
+            "startDate": "2026-08-06",
+            "endDate": "2026-08-12",
+            "task": {
+                "netWorkDays": 5,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412650302",
+            "parentId": "group-1765412650297",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "1차 마감작업",
+            "startDate": "2026-08-11",
+            "endDate": "2026-08-13",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412650303",
+            "parentId": "group-1765412650297",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "1차 타설",
+            "startDate": "2026-08-14",
+            "endDate": "2026-08-17",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 3,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412650304",
+            "parentId": "group-1765412650297",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "2차 마감작업",
+            "startDate": "2026-08-18",
+            "endDate": "2026-08-20",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412650305",
+            "parentId": "group-1765412650297",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "2차 타설",
+            "startDate": "2026-08-21",
+            "endDate": "2026-08-24",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 3,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412650306",
+            "parentId": "group-1765412650297",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "거푸집 해체정리",
+            "startDate": "2026-08-25",
+            "endDate": "2026-09-07",
+            "task": {
+                "netWorkDays": 12,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412729358",
+            "parentId": "cp-1765412729357",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "세팅층 F1",
+            "startDate": "2026-08-06",
+            "endDate": "2026-08-27",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729359",
+            "parentId": "group-1765412729358",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-09-08",
+            "endDate": "2026-09-08",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729360",
+            "parentId": "group-1765412729358",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-09-09",
+            "endDate": "2026-09-16",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 6,
+                "indirectWorkNamePost": "앵커 / 안전발판"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729361",
+            "parentId": "group-1765412729358",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-09-11",
+            "endDate": "2026-09-13",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729362",
+            "parentId": "group-1765412729358",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-09-12",
+            "endDate": "2026-09-17",
+            "task": {
+                "netWorkDays": 4,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729363",
+            "parentId": "group-1765412729358",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 알폼조립",
+            "startDate": "2026-09-17",
+            "endDate": "2026-09-19",
+            "task": {
+                "netWorkDays": 2,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729364",
+            "parentId": "group-1765412729358",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-09-19",
+            "endDate": "2026-09-21",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412729365",
+            "parentId": "cp-1765412729357",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F2",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729366",
+            "parentId": "group-1765412729365",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-09-21",
+            "endDate": "2026-09-21",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729367",
+            "parentId": "group-1765412729365",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-09-22",
+            "endDate": "2026-09-24",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729368",
+            "parentId": "group-1765412729365",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-09-23",
+            "endDate": "2026-09-24",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729369",
+            "parentId": "group-1765412729365",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-09-28",
+            "endDate": "2026-09-29",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729370",
+            "parentId": "group-1765412729365",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-09-28",
+            "endDate": "2026-09-29",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729371",
+            "parentId": "group-1765412729365",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-09-28",
+            "endDate": "2026-09-30",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412729372",
+            "parentId": "cp-1765412729357",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F3",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729373",
+            "parentId": "group-1765412729372",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-09-28",
+            "endDate": "2026-09-28",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729374",
+            "parentId": "group-1765412729372",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-09-29",
+            "endDate": "2026-10-01",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729375",
+            "parentId": "group-1765412729372",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-09-30",
+            "endDate": "2026-10-01",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729376",
+            "parentId": "group-1765412729372",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-10-01",
+            "endDate": "2026-10-02",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729377",
+            "parentId": "group-1765412729372",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-10-02",
+            "endDate": "2026-10-03",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729378",
+            "parentId": "group-1765412729372",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-10-06",
+            "endDate": "2026-10-08",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412729379",
+            "parentId": "cp-1765412729357",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F4",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729380",
+            "parentId": "group-1765412729379",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-10-06",
+            "endDate": "2026-10-06",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729381",
+            "parentId": "group-1765412729379",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-10-06",
+            "endDate": "2026-10-08",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729382",
+            "parentId": "group-1765412729379",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-10-07",
+            "endDate": "2026-10-08",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729383",
+            "parentId": "group-1765412729379",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-10-08",
+            "endDate": "2026-10-09",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729384",
+            "parentId": "group-1765412729379",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-10-10",
+            "endDate": "2026-10-11",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729385",
+            "parentId": "group-1765412729379",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-10-10",
+            "endDate": "2026-10-12",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412729386",
+            "parentId": "cp-1765412729357",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F5",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729387",
+            "parentId": "group-1765412729386",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-10-12",
+            "endDate": "2026-10-12",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729388",
+            "parentId": "group-1765412729386",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-10-13",
+            "endDate": "2026-10-15",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729389",
+            "parentId": "group-1765412729386",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-10-14",
+            "endDate": "2026-10-15",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729390",
+            "parentId": "group-1765412729386",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-10-15",
+            "endDate": "2026-10-16",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729391",
+            "parentId": "group-1765412729386",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-10-16",
+            "endDate": "2026-10-17",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729392",
+            "parentId": "group-1765412729386",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-10-17",
+            "endDate": "2026-10-19",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412729393",
+            "parentId": "cp-1765412729357",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F6",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729394",
+            "parentId": "group-1765412729393",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-10-19",
+            "endDate": "2026-10-19",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729395",
+            "parentId": "group-1765412729393",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-10-20",
+            "endDate": "2026-10-22",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729396",
+            "parentId": "group-1765412729393",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-10-21",
+            "endDate": "2026-10-22",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729397",
+            "parentId": "group-1765412729393",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-10-22",
+            "endDate": "2026-10-23",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729398",
+            "parentId": "group-1765412729393",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-10-23",
+            "endDate": "2026-10-24",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729399",
+            "parentId": "group-1765412729393",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-10-24",
+            "endDate": "2026-10-26",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412729400",
+            "parentId": "cp-1765412729357",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "기준층 F7",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729401",
+            "parentId": "group-1765412729400",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-10-26",
+            "endDate": "2026-10-26",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729402",
+            "parentId": "group-1765412729400",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-10-27",
+            "endDate": "2026-10-29",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729403",
+            "parentId": "group-1765412729400",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-10-28",
+            "endDate": "2026-10-29",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729404",
+            "parentId": "group-1765412729400",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-10-29",
+            "endDate": "2026-10-30",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729405",
+            "parentId": "group-1765412729400",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-10-30",
+            "endDate": "2026-10-31",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729406",
+            "parentId": "group-1765412729400",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-10-31",
+            "endDate": "2026-11-02",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412729407",
+            "parentId": "cp-1765412729357",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "마감층 F8",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729408",
+            "parentId": "group-1765412729407",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-11-02",
+            "endDate": "2026-11-02",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729409",
+            "parentId": "group-1765412729407",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "갱폼설치",
+            "startDate": "2026-11-03",
+            "endDate": "2026-11-05",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "보강, 검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729410",
+            "parentId": "group-1765412729407",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-11-04",
+            "endDate": "2026-11-05",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729411",
+            "parentId": "group-1765412729407",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "알폼조립",
+            "startDate": "2026-11-05",
+            "endDate": "2026-11-06",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729412",
+            "parentId": "group-1765412729407",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-11-06",
+            "endDate": "2026-11-07",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729413",
+            "parentId": "group-1765412729407",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-11-07",
+            "endDate": "2026-11-09",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765412729414",
+            "parentId": "cp-1765412729357",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "PH층",
+            "startDate": "2026-08-28",
+            "endDate": "2026-08-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729415",
+            "parentId": "group-1765412729414",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "먹매김",
+            "startDate": "2026-11-09",
+            "endDate": "2026-11-09",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729416",
+            "parentId": "group-1765412729414",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "옹벽 철근조립",
+            "startDate": "2026-11-10",
+            "endDate": "2026-11-11",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729417",
+            "parentId": "group-1765412729414",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "유로폼조립",
+            "startDate": "2026-11-11",
+            "endDate": "2026-11-18",
+            "task": {
+                "netWorkDays": 6,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729418",
+            "parentId": "group-1765412729414",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "슬라브 철근조립",
+            "startDate": "2026-11-18",
+            "endDate": "2026-11-19",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0.5,
+                "indirectWorkNamePost": "검측"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765412729419",
+            "parentId": "group-1765412729414",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "타설",
+            "startDate": "2026-11-19",
+            "endDate": "2026-11-21",
+            "task": {
+                "netWorkDays": 1,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 2,
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765683972316",
+            "parentId": null,
+            "wbsLevel": 1,
+            "type": "GROUP",
+            "name": "테스트 공구",
+            "startDate": "2025-12-14",
+            "endDate": "2026-01-22",
+            "dependencies": []
+        },
+        {
+            "id": "cp-1765683949170",
+            "parentId": "group-1765683972316",
+            "wbsLevel": 1,
+            "type": "CP",
+            "name": "테스트 CP",
+            "startDate": "2026-02-12",
+            "endDate": "2026-03-06",
+            "cp": {
+                "workDaysTotal": 19,
+                "nonWorkDaysTotal": 5
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765684109664",
+            "parentId": "cp-1765683949170",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "테스트그룹",
+            "startDate": "2025-12-24",
+            "endDate": "2026-01-09",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765684001777",
+            "parentId": "group-1765684109664",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "테스트공정 1",
+            "startDate": "2026-02-12",
+            "endDate": "2026-02-23",
+            "task": {
+                "netWorkDays": 7,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765684045310",
+            "parentId": "group-1765684109664",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "테스트공정 2",
+            "startDate": "2026-02-19",
+            "endDate": "2026-02-27",
+            "task": {
+                "netWorkDays": 3,
+                "indirectWorkDaysPre": 2,
+                "indirectWorkDaysPost": 3,
+                "indirectWorkNamePre": "선 작업",
+                "indirectWorkNamePost": "양생"
+            },
+            "dependencies": []
+        },
+        {
+            "id": "task-1765684046237",
+            "parentId": "group-1765684109664",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "테스트공정 3",
+            "startDate": "2026-02-28",
+            "endDate": "2026-03-06",
+            "task": {
+                "netWorkDays": 5,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        },
+        {
+            "id": "group-1765770735396",
+            "parentId": "cp-1765683949170",
+            "wbsLevel": 2,
+            "type": "GROUP",
+            "name": "새 그룹",
+            "startDate": "2026-02-19",
+            "endDate": "2026-02-28",
+            "dependencies": []
+        },
+        {
+            "id": "task-1765764976545",
+            "parentId": "group-1765770735396",
+            "wbsLevel": 2,
+            "type": "TASK",
+            "name": "새 공정",
+            "startDate": "2026-02-19",
+            "endDate": "2026-02-23",
+            "task": {
+                "netWorkDays": 4,
+                "indirectWorkDaysPre": 0,
+                "indirectWorkDaysPost": 0
+            },
+            "dependencies": []
+        }
+    ],
+    "anchorDependencies": [
+        {
+            "id": "dep-1765629494777-tl89myq3g",
+            "sourceTaskId": "task-1764833962962",
+            "targetTaskId": "task-1764833969352",
+            "sourceDayIndex": 6,
+            "targetDayIndex": 0
+        },
+        {
+            "id": "dep-1765629498220-gg0lut00a",
+            "sourceTaskId": "task-1764833969352",
+            "targetTaskId": "task-1764833974727",
+            "sourceDayIndex": 2,
+            "targetDayIndex": 0
+        },
+        {
+            "id": "dep-1765629511131-8k1ucou3j",
+            "sourceTaskId": "task-1764833957364",
+            "targetTaskId": "task-1764833962962",
+            "sourceDayIndex": 1,
+            "targetDayIndex": 0
+        },
+        {
+            "id": "dep-1765714329746-hygtq3q0w",
+            "sourceTaskId": "task-1765684045310",
+            "targetTaskId": "task-1765684046237",
+            "sourceDayIndex": 8,
+            "targetDayIndex": 0
+        },
+        {
+            "id": "dep-1765719580602-lwwkj3zjq",
+            "sourceTaskId": "task-1765684001777",
+            "targetTaskId": "task-1765684045310",
+            "sourceDayIndex": 5,
+            "targetDayIndex": 2
+        }
+    ]
+}
